@@ -21,7 +21,6 @@
 
     <table border="1">
       <tr>
-        <td>Clave empleado</td>
         <td>Nombre</td>
         <td>Apellido Paterno</td>
         <td>Apellido Materno</td>
@@ -38,13 +37,12 @@
       ?>
 
       <tr>
-        <td><?php echo $mostrar["Clave_Emp"] ?></td>
         <td><?php echo $mostrar["Nombre"] ?></td>
         <td><?php echo $mostrar["ApPaterno"] ?></td>
         <td><?php echo $mostrar["ApMaterno"] ?></td>
         <td><?php echo $mostrar["FecNac"] ?></td>
         <td><?php echo $mostrar["Departamento"] ?></td>
-        <td><?php echo $mostrar["Sueldo"] ?></td>
+        <td><?php echo "$ ".$mostrar["Sueldo"] ?></td>
       </tr>
 
       <?php
